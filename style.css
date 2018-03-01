@@ -14,8 +14,8 @@ img {
 
 .wrapper {
 	display: grid;
-	grid-template-columns: repeat(3, minmax(200px 1fr));
-	grid-template-rows: auto;
+	grid-template-columns: repeat(5, minmax(100px 1fr));
+	grid-template-rows: 5;
 	grid-template-areas: 
 		"header header header header"
 		"banner banner banner cta1"
@@ -51,6 +51,10 @@ img {
 	grid-area: footer;
 }
 
+.footer_right {
+	
+}
+
 
 
 
@@ -78,7 +82,7 @@ img {
 
 /* Footer */
 
-#map_left, #map_right {
+#map_left {
 	width: 100px;
 	height: 100px;
 	background-color: grey;
