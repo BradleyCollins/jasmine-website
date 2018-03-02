@@ -14,47 +14,9 @@ img {
 
 .wrapper {
 	display: grid;
-	grid-template-columns: repeat(5, minmax(100px 1fr));
-	grid-template-rows: 5;
-	grid-template-areas: 
-		"header header header header"
-		"banner banner banner cta1"
-		"home_about home_about home_about home_about"
-		"home_info home_info home_info home_info"
-		"footer footer footer footer"
+	grid-gap: 20px;
+	grid-template-columns: repeat(autofill, minmax(150px, 1fr));
 }
-
-.nav {
-	grid-area: header;
-	display: grid;
-
-}
-
-.banner {
-	grid-area: banner;
-}
-
-.cta1 {
-	grid-area: cta1;
-	display: grid;
-}
-
-.home_about {
-	grid-area: home_about;
-}
-
-.home_info {
-	grid-area: home_info;
-}
-
-.footer {
-	grid-area: footer;
-}
-
-.footer_right {
-	
-}
-
 
 
 
