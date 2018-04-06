@@ -30,7 +30,7 @@ button {
 	grid-row: row 2;
 	display: grid;
 	grid-gap: 20px;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .banner {
@@ -39,7 +39,7 @@ button {
 }
 
 .cta1 {
-	grid-column-start: 2;
+	grid-column-start: 2 / span 3;
 	background: #b9d695;
 }
 
@@ -48,34 +48,43 @@ section {
 	grid-row: 3;
 	display: grid;
 	grid-gap: 20px;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: auto;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 300px 1fr;
 	grid-column: 1 / 4;
 	grid-row-start: 3;
 }
 
 .home_about {
-	grid-column: 1 / span 2;
+	grid-column: 1 / span 4;
 	background: #ba9675;
 	/*grid-column: auto / span 3
 	grid-row: auto / span 3;*/
 }
 
+/*.home_info {
+	grid-column: 1;
+}*/
+
  .right_info {
-	grid-column-start: 2;
-	grid-column-end: 3;
+	grid-column: 2 / span 2;
 	grid-row: 2;
 	background: grey;
 }
 
 .left_info {
-	grid-column: 2 / 3;
+	grid-column: 1;
 	grid-row: 2;
 	background: #a2b7d6;
 }
-.home_jas img {
-	justify-self: center;
+.home_jas {
+	background: #ad68ab;
+	grid-column: 3 / span 2;
 }
+
+.home_jas img {
+	justify-content: center;
+}
+
 footer {
 	grid-column: 1;
 	grid-row: 4;
