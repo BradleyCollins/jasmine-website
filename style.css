@@ -40,6 +40,7 @@ button {
 
 .cta1 {
 	grid-column-start: 2;
+	background: #b9d695;
 }
 
 section {
@@ -53,8 +54,9 @@ section {
 	grid-row-start: 3;
 }
 
-.home_info {
+.home_about {
 	grid-column: 1 / span 2;
+	background: #ba9675;
 	/*grid-column: auto / span 3
 	grid-row: auto / span 3;*/
 }
@@ -63,13 +65,17 @@ section {
 	grid-column-start: 2;
 	grid-column-end: 3;
 	grid-row: 2;
+	background: grey;
 }
 
 .left_info {
 	grid-column: 2 / 3;
 	grid-row: 2;
+	background: #a2b7d6;
 }
-
+.home_jas img {
+	justify-self: center;
+}
 footer {
 	grid-column: 1;
 	grid-row: 4;
