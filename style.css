@@ -15,7 +15,8 @@ button {
 	grid-template-rows: repeat(5, [row] auto);
 }
 .nav {
-	grid-column: 2 / span 3;
+	grid-column: 3 / span 2;
+	justify-self: right;
 }
 
 .nav li {
@@ -27,27 +28,44 @@ button {
 	display: inline;
 }
 
-.banner {
-	grid-column: col 1 / span 2;
+.top {
+	grid-column: col 1 / span 3;
 	grid-row: row 2;
 	display: grid;
 	grid-gap: 20px;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 300px;
 }
 
 .cta1 {
-	grid-column: 2 / 3;
-	grid-row: 1;
+	grid-column-start: 2;
 }
 
 section {
-	grid-column: col 3 / span 4;
+	grid-column: col 3 / span auto;
 	grid-row: 3;
 	display: grid;
 	grid-gap: 20px;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
 	grid-column: 1 / 4;
 	grid-row-start: 3;
+}
+
+.home_info {
+	grid-column: 1 / 3;
+	gid-row-start: 2;
+	grid-column-end: 3;
+}
+
+ .right_info {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row: 2;
+}
+
+.left_info {
+	grid-column: 2 / 3;
+	grid-row: 2;
 }
 
 footer {
