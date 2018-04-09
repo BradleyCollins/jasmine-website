@@ -33,17 +33,18 @@ button {
 	grid-row: row 2;
 	display: grid;
 	grid-gap: 20px;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 10% 850px 100px 100px 10%;
 }
 
 .banner {
-	grid-column: 1 / 2;
+	grid-column: 2 / 3;
 	grid-row: 1;
 }
 
 .cta1 {
-	grid-column-start: 2 / span 3;
+	grid-column: 3 / span 3;
 	background: #b9d695;
+	align-items: center;
 }
 
 section {
@@ -60,17 +61,11 @@ section {
 .home_about {
 	grid-column: 2 / span 4;
 	background: #ba9675;
-	/*grid-column: auto / span 3
-	grid-row: auto / span 3;*/
 }
 
 .home_about h1 {
 	text-align: center;
 }
-
-/*.home_info {
-	grid-column: 1;
-}*/
 
  .right_info {
 	grid-column: 3;
